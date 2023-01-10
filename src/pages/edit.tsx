@@ -41,8 +41,7 @@ const Edit = () => {
   const navigate = useNavigate();
 
   const handleUpdateCard = async () => {
-    console.log('a', card);
-    if (!card.code || !card.fullName) return;
+    if (!card.code || !card.fullName || !card.phoneNumber) return;
     try {
       const res = await activeCard(card);
 

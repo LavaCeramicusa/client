@@ -6,7 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { reviews } from 'data';
+
+import { personnels } from 'data';
 
 const Slider = () => {
   return (
@@ -18,18 +19,22 @@ const Slider = () => {
       pagination={{ clickable: true }}
       autoplay={{ delay: 2500 }}
     >
-      {reviews.map((review, index) => {
+      {personnels.map((personnel, index) => {
         return (
           <SwiperSlide
             key={index}
             className='w-full flex shrink-0 flex-col justify-center items-center py-20 xl:px-60 text-center transition-all'
           >
             <img
-              src={review.image}
+              src={personnel.image}
               className='inline-block w-56 h-56 sm:w-96 sm:h-96 rounded-full'
             />
-            <span className='inline-block my-5'>{review.content}</span>
-            <h4 className='font-extrabold text-5xl'>{review.name}</h4>
+            <h4 className='font-extrabold text-5xl mt-4 text-primary'>
+              {personnel.name}
+            </h4>
+            <span className='inline-block mb-5 mt-1 text-2xl'>
+              {personnel.position}
+            </span>
           </SwiperSlide>
         );
       })}

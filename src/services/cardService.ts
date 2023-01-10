@@ -12,3 +12,14 @@ export const activeCard = async (payload: Card) => {
 
   return res;
 };
+
+export const uploadInfo = async (payload: FormData) => {
+  console.log('p', payload);
+  const res = await instance.post('/cards/upload', payload, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+
+  return res;
+};

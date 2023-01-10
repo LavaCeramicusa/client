@@ -8,11 +8,12 @@ import Landing from 'pages/landing-page';
 import Search from 'pages/search';
 import Cards from 'pages/cards';
 import Edit from 'pages/edit';
+import Upload from 'pages/upload';
 
 initInterceptor({
-  baseURL: 'https://lava.herokuapp.com',
+  baseURL: 'http://localhost:8000/',
   headers: {
-    'Cotent-Type': 'application/json',
+    'Content-Type': 'application/json',
   },
 });
 
@@ -25,6 +26,7 @@ const AppRouter = () => {
       <Route path='/active' element={<Edit />} />
       <Route path='/detail-card' element={<CardDetail />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/upload' element={<Upload />} />
     </Routes>
   );
 };
