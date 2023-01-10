@@ -120,7 +120,7 @@ const Landing = () => {
       </section>
 
       <div className='px-5 py-20 xl:px-20'>
-        <h3 className='text-center text-5xl'>What Our Customers Say</h3>
+        <h3 className='text-center text-5xl'>Our Personnels</h3>
         <Slider />
       </div>
 
@@ -177,11 +177,14 @@ const Landing = () => {
           <span className='text-red-300 text-sm tracking-widest'>
             THE ALLSMILES TEAM
           </span>
-          <h3 className='text-blue-900 text-5xl mb-4 mt-3'>Meet Our Experts</h3>
+          <h3 className='text-blue-900 text-5xl mb-4 mt-3'>
+            What Our Customers Say
+          </h3>
           <p className='mb-16 text-gray-400'>
-            An delicata inimicus sea, vis equidem oporteat conclusion mundi et.
-            Nec malis dolor fabellas ex, eu nec falli iuvaret. Per elitr
-            eloquentiam an esse.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure
+            reprehenderit nisi inventore dolore eos? Dolorem veritatis illum
+            iusto incidunt repudiandae modi eveniet eius, nisi labore!
+            Consectetur aperiam libero dolor.
           </p>
         </div>
 

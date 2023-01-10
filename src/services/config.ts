@@ -6,7 +6,7 @@ declare module 'axios' {
   }
 }
 
-const BASE_URL = 'https://lava.herokuapp.com';
+const BASE_URL = 'http://localhost:8000/';
 
 const baseConfig = (baseUrl?: string, contentType = 'application/json') => ({
   baseURL: baseUrl,
